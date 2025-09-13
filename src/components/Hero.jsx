@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { Shield, Users, CheckCircle, Star } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Shield, CheckCircle, Star } from "lucide-react";
+import resim1 from "../images/resim1.jpg"; // ✅ Yeni görsel import edildi
 
 const Hero = () => {
   const [customerCount, setCustomerCount] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCustomerCount(prev => {
+      setCustomerCount((prev) => {
         if (prev < 1000) {
           return prev + 3;
         } else {
@@ -28,20 +29,22 @@ const Hero = () => {
               <Star className="h-4 w-4" />
               <span>Türkiye'nin Güvenilir İlaçlama Şirketi</span>
             </div>
-            
+
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Profesyonel
               <span className="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-                {' '}İlaçlama{' '}
+                {" "}
+                İlaçlama{" "}
               </span>
               Hizmetleri
             </h1>
-            
+
             <p className="text-lg text-gray-600 mb-8 max-w-2xl">
-              Ev, ofis, fabrika ve tüm yaşam alanlarınızda zararlılardan korunmanız için 
-              uzman ekibimizle güvenli ve etkili ilaçlama çözümleri sunuyoruz.
+              Ev, ofis, fabrika ve tüm yaşam alanlarınızda zararlılardan
+              korunmanız için uzman ekibimizle güvenli ve etkili ilaçlama
+              çözümleri sunuyoruz.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-200 shadow-lg">
                 Hemen İletişime Geç
@@ -50,7 +53,7 @@ const Hero = () => {
                 Hizmetlerimizi Keşfet
               </button>
             </div>
-            
+
             <div className="flex flex-wrap gap-8 justify-center lg:justify-start">
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-600 mb-1">
@@ -63,33 +66,38 @@ const Hero = () => {
                 <div className="text-gray-600 text-sm">Yıl Deneyim</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600 mb-1">24/7</div>
+                <div className="text-3xl font-bold text-purple-600 mb-1">
+                  24/7
+                </div>
                 <div className="text-gray-600 text-sm">Destek Hattı</div>
               </div>
             </div>
           </div>
-          
+
           <div className="relative">
             <div className="relative z-10">
-              <img 
-                src="https://images.pexels.com/photos/4239853/pexels-photo-4239853.jpeg?auto=compress&cs=tinysrgb&w=800"
+              {/* ✅ Yeni resim eklendi */}
+              <img
+                src={resim1}
                 alt="Profesyonel İlaçlama Hizmeti"
                 className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
               />
             </div>
-            
+
             <div className="absolute top-8 -left-4 bg-white p-4 rounded-lg shadow-lg z-20">
               <div className="flex items-center space-x-3">
                 <div className="bg-green-100 p-2 rounded-full">
                   <CheckCircle className="h-5 w-5 text-green-600" />
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900">%100 Garanti</div>
+                  <div className="font-semibold text-gray-900">
+                    %100 Garanti
+                  </div>
                   <div className="text-sm text-gray-600">Etkili Çözüm</div>
                 </div>
               </div>
             </div>
-            
+
             <div className="absolute bottom-8 -right-4 bg-white p-4 rounded-lg shadow-lg z-20">
               <div className="flex items-center space-x-3">
                 <div className="bg-blue-100 p-2 rounded-full">
@@ -101,7 +109,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-br from-blue-400/20 to-green-400/20 rounded-full blur-3xl"></div>
             <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-gradient-to-br from-green-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
           </div>

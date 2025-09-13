@@ -1,17 +1,28 @@
-import React from 'react';
-import { ArrowLeft, CheckCircle, Clock, Award, Phone, MessageCircle, Shield, Star } from 'lucide-react';
+import React from "react";
+import {
+  ArrowLeft,
+  CheckCircle,
+  Clock,
+  Award,
+  Phone,
+  MessageCircle,
+  Shield,
+  Star,
+} from "lucide-react";
 
 const ServiceDetail = ({ service, onBack }) => {
   if (!service) return null;
 
   const handleWhatsApp = () => {
     const message = `Merhaba! ${service.title} hizmeti hakkında bilgi almak istiyorum.`;
-    const whatsappUrl = `https://wa.me/905457207524?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    const whatsappUrl = `https://wa.me/905457207524?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   const handleCall = () => {
-    window.open('tel:05457207524', '_self');
+    window.open("tel:05457207524", "_self");
   };
 
   return (
@@ -32,14 +43,14 @@ const ServiceDetail = ({ service, onBack }) => {
           {/* Sol Taraf - Görsel */}
           <div className="space-y-6">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={service.image} 
+              <img
+                src={service.image}
                 alt={service.title}
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
             </div>
-            
+
             {/* Özellikler */}
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
@@ -70,11 +81,11 @@ const ServiceDetail = ({ service, onBack }) => {
                   Profesyonel Hizmet
                 </span>
               </div>
-              
+
               <h1 className="text-4xl font-bold text-gray-900 mb-4">
                 {service.title}
               </h1>
-              
+
               <p className="text-xl text-gray-600 leading-relaxed">
                 {service.detailedDescription}
               </p>
@@ -85,12 +96,16 @@ const ServiceDetail = ({ service, onBack }) => {
               <div className="bg-white p-4 rounded-xl shadow-md text-center">
                 <Clock className="h-8 w-8 text-blue-600 mx-auto mb-2" />
                 <div className="text-sm text-gray-500">Süre</div>
-                <div className="font-semibold text-gray-900">{service.duration}</div>
+                <div className="font-semibold text-gray-900">
+                  {service.duration}
+                </div>
               </div>
               <div className="bg-white p-4 rounded-xl shadow-md text-center">
                 <Award className="h-8 w-8 text-green-600 mx-auto mb-2" />
                 <div className="text-sm text-gray-500">Garanti</div>
-                <div className="font-semibold text-gray-900">{service.warranty}</div>
+                <div className="font-semibold text-gray-900">
+                  {service.warranty}
+                </div>
               </div>
               <div className="bg-white p-4 rounded-xl shadow-md text-center">
                 <Star className="h-8 w-8 text-yellow-500 mx-auto mb-2" />
@@ -105,9 +120,10 @@ const ServiceDetail = ({ service, onBack }) => {
                 Hemen Teklif Alın
               </h3>
               <p className="text-gray-600 mb-6">
-                {service.price} - Size özel en uygun fiyatı belirlemek için iletişime geçin.
+                {service.price} - Size özel en uygun fiyatı belirlemek için
+                iletişime geçin.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
                   onClick={handleWhatsApp}

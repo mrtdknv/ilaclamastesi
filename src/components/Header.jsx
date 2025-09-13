@@ -1,5 +1,6 @@
-import React from 'react';
-import { ArrowLeft, Shield } from 'lucide-react';
+import React from "react";
+import { ArrowLeft } from "lucide-react";
+import logo from "../images/logo.jpg"; // LOGO YOLU
 
 const Header = ({ onBackToHome, showBack }) => {
   return (
@@ -17,9 +18,12 @@ const Header = ({ onBackToHome, showBack }) => {
               </button>
             )}
             <div className="flex items-center space-x-3">
-              <div className="bg-gradient-to-br from-blue-600 to-green-600 p-2 rounded-lg">
-                <Shield className="h-6 w-6 text-white" />
-              </div>
+              {/* LOGO */}
+              <img
+                src={logo}
+                alt="Kuzey Yıldızı Logo"
+                className="h-10 w-10 object-contain rounded-md"
+              />
               <div>
                 <h1 className="text-xl sm:text-2xl font-bold text-gray-900">
                   Kuzey Yıldızı İlaçlama
@@ -30,15 +34,24 @@ const Header = ({ onBackToHome, showBack }) => {
               </div>
             </div>
           </div>
-          
+
           <nav className="hidden md:flex space-x-8">
-            <a href="#hizmetler" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+            <a
+              href="#hizmetler"
+              className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
+            >
               Hizmetlerimiz
             </a>
-            <a href="#hakkimizda" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+            <a
+              href="#hakkimizda"
+              className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
+            >
               Hakkımızda
             </a>
-            <a href="#iletisim" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+            <a
+              href="#iletisim"
+              className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
+            >
               İletişim
             </a>
           </nav>
