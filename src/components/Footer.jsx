@@ -1,5 +1,5 @@
-import React from 'react';
-import { Shield, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import React from "react";
+import { Shield, MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -14,11 +14,13 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold">Kuzey Yıldızı İlaçlama</h3>
-                <p className="text-gray-400 text-sm">Güvenilir Çözüm Ortağınız</p>
+                <p className="text-gray-400 text-sm">
+                  Güvenilir Çözüm Ortağınız
+                </p>
               </div>
             </div>
             <p className="text-gray-400 mb-4">
-              7 yıllık deneyimimizle ev, ofis, fabrika ve her türlü mekanınızda 
+              7 yıllık deneyimimizle ev, ofis, fabrika ve her türlü mekanınızda
               zararlılardan korunmanız için profesyonel hizmet sunuyoruz.
             </p>
             <div className="flex items-center space-x-2 text-sm">
@@ -59,7 +61,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Phone className="h-5 w-5 text-blue-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium">0545 720 75 24</p>
+                  <p className="font-medium">0543 448 86 06 </p>
                   <p className="text-gray-400 text-sm">7/24 Acil Hat</p>
                 </div>
               </div>
@@ -90,7 +92,9 @@ const Footer = () => {
               </div>
               <div className="bg-gray-800 p-4 rounded-lg">
                 <h5 className="font-medium text-blue-400 mb-2">Lisanslı</h5>
-                <p className="text-gray-400 text-sm">T.C. Tarım Bakanlığı Onaylı</p>
+                <p className="text-gray-400 text-sm">
+                  T.C. Tarım Bakanlığı Onaylı
+                </p>
               </div>
               <div className="bg-gray-800 p-4 rounded-lg">
                 <h5 className="font-medium text-purple-400 mb-2">Sigortalı</h5>

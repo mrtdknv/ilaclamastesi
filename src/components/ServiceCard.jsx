@@ -1,13 +1,15 @@
-import React from 'react';
-import { ArrowRight, Shield, Clock, Award } from 'lucide-react';
+import React from "react";
+import { ArrowRight, Shield, Clock, Award } from "lucide-react";
 
 const ServiceCard = ({ service, onServiceClick }) => {
   return (
-    <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer group"
-         onClick={() => onServiceClick(service)}>
+    <div
+      className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer group"
+      onClick={() => onServiceClick(service)}
+    >
       <div className="relative h-48 overflow-hidden">
-        <img 
-          src={service.image} 
+        <img
+          src={service.image}
           alt={service.title}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
@@ -18,7 +20,7 @@ const ServiceCard = ({ service, onServiceClick }) => {
           </span>
         </div>
       </div>
-      
+
       <div className="p-6">
         <div className="flex items-start justify-between mb-3">
           <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200">
@@ -26,11 +28,9 @@ const ServiceCard = ({ service, onServiceClick }) => {
           </h3>
           <ArrowRight className="h-5 w-5 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all duration-200" />
         </div>
-        
-        <p className="text-gray-600 mb-4 line-clamp-2">
-          {service.description}
-        </p>
-        
+
+        <p className="text-gray-600 mb-4 line-clamp-2">{service.description}</p>
+
         <div className="flex items-center justify-between text-sm text-gray-500">
           <div className="flex items-center space-x-1">
             <Clock className="h-4 w-4" />
@@ -41,7 +41,7 @@ const ServiceCard = ({ service, onServiceClick }) => {
             <span>{service.warranty}</span>
           </div>
         </div>
-        
+
         <div className="mt-4 pt-4 border-t border-gray-100">
           <div className="flex items-center space-x-2">
             <Shield className="h-4 w-4 text-green-600" />

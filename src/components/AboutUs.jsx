@@ -16,14 +16,23 @@ const AboutUs = () => {
             </span>{" "}
             firmamız, ev, iş yeri, depo ilaçlama, kemirgen kontrolü ve
             haşere/böcek ilaçlama alanlarında yıllardır profesyonel çözümler
-            sunmaktadır. Amacımız, yaşam alanlarınızı güvenli, sağlıklı ve
-            huzurlu hale getirmektir.
+            sunmaktadır. Ayrıca{" "}
+            <span className="font-semibold text-blue-600">
+              Ankara, Sinop , Karabük ,Çankırı
+            </span>{" "}
+            bölgelerinde de hizmet vermekteyiz. Amacımız, yaşam alanlarınızı
+            güvenli, sağlıklı ve huzurlu hale getirmektir.
           </p>
           <p className="text-lg text-gray-600 mb-8 leading-relaxed">
             Uzman kadromuz, çevre dostu ürünler ve modern ekipmanlarla, müşteri
-            memnuniyetini ön planda tutarak hizmet vermektedir. Her ihtiyaca
-            özel, etkili ve garantili ilaçlama çözümleri ile sizlerin
-            yanındayız.
+            memnuniyetini ön planda tutarak hizmet vermektedir. Firmamızda
+            ayrıca{" "}
+            <span className="font-semibold text-blue-600">
+              İş Güvenliği Uzmanı
+            </span>{" "}
+            bulunmakta ve tüm uygulamalar iş güvenliği standartlarına uygun
+            olarak yürütülmektedir. Her ihtiyaca özel, etkili ve garantili
+            ilaçlama çözümleri ile sizlerin yanındayız.
           </p>
 
           <ul className="space-y-4">
@@ -57,7 +66,7 @@ const AboutUs = () => {
         {/* Sağ Kısım - Görsel & Kartlar */}
         <div className="relative">
           <img
-            src="https://images.pexels.com/photos/4099269/pexels-photo-4099269.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src="https://turacevre.com/images/intro-pic.jpg"
             alt="İlaçlama Hizmeti"
             className="rounded-2xl shadow-2xl w-full h-[450px] object-cover"
           />

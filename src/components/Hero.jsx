@@ -45,14 +45,7 @@ const Hero = () => {
               çözümleri sunuyoruz.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-200 shadow-lg">
-                Hemen İletişime Geç
-              </button>
-              <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-200">
-                Hizmetlerimizi Keşfet
-              </button>
-            </div>
+            <div className="flex flex-col sm:flex-row gap-4 mb-12"></div>
 
             <div className="flex flex-wrap gap-8 justify-center lg:justify-start">
               <div className="text-center">

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { MessageCircle, Phone } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { MessageCircle, Phone } from "lucide-react";
 
 const ContactButtons = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -8,21 +8,24 @@ const ContactButtons = () => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    
+
     checkMobile();
-    window.addEventListener('resize', checkMobile);
-    
-    return () => window.removeEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   const handleWhatsApp = () => {
-    const message = 'Merhaba! İlaçlama hizmetleriniz hakkında bilgi almak istiyorum.';
-    const whatsappUrl = `https://wa.me/905457207524?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    const message =
+      "Merhaba! İlaçlama hizmetleriniz hakkında bilgi almak istiyorum.";
+    const whatsappUrl = `https://wa.me/905434488606?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   const handleCall = () => {
-    window.open('tel:05457207524', '_self');
+    window.open("tel:05434488606", "_self");
   };
 
   return (
